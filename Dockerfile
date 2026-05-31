@@ -5,7 +5,7 @@ WORKDIR /app
 # This PR moved the frontend under app/frontend, but the Dockerfile still
 # points at the old web/ workspace. GitHub hides the failure inside the image
 # build log, after checkout, Buildx setup, and install noise.
-COPY web/package.json web/package-lock.json ./
+COPY app/frontend/package.json app/frontend/package-lock.json ./
 RUN npm ci
 
 COPY app/frontend/src ./src
