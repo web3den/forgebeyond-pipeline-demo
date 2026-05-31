@@ -20,3 +20,12 @@ jobs:
           from app.main import title_from_html
           assert title_from_html("<title>ok</title>") == "ok"
           PY
+
+  build-app-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Build app image
+        run: bash scripts/noisy-build-context.sh
