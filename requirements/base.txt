@@ -1,0 +1,1 @@
+beautiful-soup4==4.12.3
