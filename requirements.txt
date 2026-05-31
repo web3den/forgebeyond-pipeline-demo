@@ -1,1 +1,1 @@
-beautiful-soup4==4.12.3
+beautifulsoup4==4.12.3
