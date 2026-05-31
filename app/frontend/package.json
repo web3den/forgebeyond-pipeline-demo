@@ -1,0 +1,12 @@
+{
+  "name": "forgebeyond-demo-web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node src/build.js"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest"
+  },
+  "devDependencies": {}
+}
