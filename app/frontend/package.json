@@ -4,9 +4,5 @@
   "private": true,
   "scripts": {
     "build": "node src/build.js"
-  },
-  "dependencies": {
-    "@vitejs/plugin-react": "latest"
-  },
-  "devDependencies": {}
+  }
 }
